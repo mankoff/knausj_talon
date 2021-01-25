@@ -62,7 +62,7 @@ def update_title():
 
 
 # todo: dynamic rect?
-@imgui.open(y=0, software=app.platform == "linux")
+@imgui.open(y=330, x=23, software=app.platform == "linux")
 def gui_alphabet(gui: imgui.GUI):
     global alphabet
     gui.text("Alphabet help")
