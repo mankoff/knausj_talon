@@ -1,0 +1,12 @@
+
+
+# krunner
+system search: key(alt-space)
+
+# desk one: key(alt-1)
+# desk two: key(alt-2)
+desk <number>: user.switch_desk("{number}")
+
+desk clear: key("f10")
+desk all: key("f11")
+desk window: key(f12)
