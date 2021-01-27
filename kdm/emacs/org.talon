@@ -13,8 +13,10 @@ go down section: key(ctrl-c ctrl-n)
 go up (babel|code): key(ctrl-c ctrl-v ctrl-p)
 go down (babel|code): key(ctrl-c ctrl-v ctrl-n)
 
+### Babel
+
 # yasnippets. Make "name: user.text" pronouncable words
-(babel | template) <user.text>:
+(code | babel | template) <user.text>:
      key(ctrl-c & ctrl-s)
      insert(text)
      key(enter)
@@ -22,13 +24,24 @@ go down (babel|code): key(ctrl-c ctrl-v ctrl-n)
      # insert("set-frame-title")
      # key(enter)
 
+(code | babel) tangle this: key(ctrl-u ctrl-c ctrl-v ctrl-t)
+(code | babel) tangle: key(ctrl-c ctrl-v ctrl-t)
+(code | babel) up: key(ctrl-c ctrl-v ctrl-p)
+(code | babel) down: key(ctrl-c ctrl-v ctrl-n)
+
+### Export
+
+export (tech | latex): key(ctrl-c ctrl-e l l)
+export web: key(ctrl-c ctrl-e h h)
+export dock: key(ctrl-c ctrl-e o o)
+
+
 # # yasnippets. Make "name: user.text" pronouncable words
 # (babel | template) <user.text>:
 #      key(ctrl-c & ctrl-s)
 #      insert(text)
 #      key(enter)
 
-# https://talonvoice.slack.com/archives/C01CB382BB5/p1603441280055200
 # buffer [<phrase>]: 
 #    user.emacs_buffer_prompt()
 #    user.insert_lowercase(phrase or "")
