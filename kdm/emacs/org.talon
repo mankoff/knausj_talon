@@ -20,14 +20,18 @@ go down (babel|code): key(ctrl-c ctrl-v ctrl-n)
      key(ctrl-c & ctrl-s)
      insert(text)
      key(enter)
+     sleep(50ms)
+     key(" ")
+     sleep(50ms)
+     key(backspace)
      # key(alt-x)
      # insert("set-frame-title")
      # key(enter)
 
 (code | babel) tangle this: key(ctrl-u ctrl-c ctrl-v ctrl-t)
 (code | babel) tangle: key(ctrl-c ctrl-v ctrl-t)
-(code | babel) up: key(ctrl-c ctrl-v ctrl-p)
-(code | babel) down: key(ctrl-c ctrl-v ctrl-n)
+(code | babel) (up|last): key(ctrl-c ctrl-v ctrl-p)
+(code | babel) (down|next): key(ctrl-c ctrl-v ctrl-n)
 
 ### Export
 

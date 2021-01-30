@@ -11,6 +11,11 @@ check mail: key(shift-alt-r)
 inbox: key(shift-alt-M)
 agenda: key(shift-alt-A)
 junk: key(ctrl-d)
+open shell: key(alt-shift-s)
+(nick|nickle): key(ctrl-n)
+(pick|pickle): key(ctrl-p)
+(jump to|find|search): key(ctrl-s)
+
 
 # Edit action class
 action(edit.copy):
